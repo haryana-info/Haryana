@@ -1,0 +1,247 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling with video background */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background-color: #000; /* Fallback color */
+}
+
+/* Video Background with Overlay */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Lighter overlay for more video visibility */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    background: transparent; /* No background to show video */
+}
+
+/* Header Logo */
+header .logo {
+    font-size: 6rem; /* Larger font size for the logo */
+    font-weight: bold;
+    font-family: 'Cinzel', serif;  /* Stylish font */
+    color: #FFFFF0	; /* Light grey for better visibility */
+}
+
+/* Navigation Links */
+header nav {
+    margin-top: 0.7rem; /* Space above navigation */
+}
+
+header nav a {
+    color: #FFFFF0	; /* Light grey color for links */
+     font-family: 'Cambria Math', serif;
+    font-size: 1.4rem; /* Increased font size */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+	.hero {
+    text-align: center; /* Center the text */
+    margin: 2rem 0; /* Add margin above and below */
+}
+
+.hero h1 {
+    font-family: 'Cambria Math', serif; /* Change font style */
+    font-size: 3rem; /* Change font size for the heading */
+    color: #ffffff; /* Change color of the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.hero p {
+        font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-size: 1.25rem; /* Change font size for the paragraph */
+    color: #e0e0e0; /* Change color of the paragraph */
+}
+
+/* Section */
+.section {
+    padding: 2rem;
+    margin: 0;
+    background: transparent;
+    border-radius: 0.3rem;
+}
+
+/* Grid Layout for Categories */
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 40px; /* Increased space between boxes */
+    padding: 4rem; /* Padding around the grid */
+    margin: 5rem auto; /* Margin for space from header and footer */
+    max-width: 1200px; /* Max width for alignment */
+}
+
+/* Individual Category Box */
+.category-grid .category-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+    border-radius: 8px;
+    color: #fff;
+    padding: 1rem; /* Padding for content inside the box */
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for shadow and scaling */
+    width: 100%; /* Full width of the grid cell */
+    height: 250px; /* Increased height for a bigger box */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    position: relative; /* Position for the image */
+    overflow: hidden; /* Prevent overflow of image */
+}
+
+/* Hover Effect */
+.category-grid .category-box:hover {
+    box-shadow: 0 0 15px rgba(233, 78, 119, 0.8); /* Glow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Image within the Box */
+.category-grid .category-box img {
+    width: 100%; /* Make image full width */
+    height: 90%; /* Make image full height */
+    object-fit: cover; /* Cover the box without stretching */
+    border-radius: 10px;
+    z-index: 0; /* Send image behind content */
+}
+
+/* Title Style */
+.category-grid .category-box h3 {
+    font-size: 1.5rem; /* Font size for keywords */
+    margin: 0.5rem 0; /* Spacing above and below the title */
+    position: relative; /* Keep it above the image */
+    z-index: 1; /* Bring title above image */
+}
+
+/* Description Style */
+.category-grid .category-box p {
+    font-size: 1rem; /* Font size for descriptions */
+    margin: 0; /* No extra margin */
+    position: relative; /* Keep it above the image */
+    z-index: 1; /* Bring description above image */
+}
+
+/* Add text visibility on hover */
+.category-grid .category-box:hover h3,
+.category-grid .category-box:hover p {
+    opacity: 1; /* Ensure text is visible on hover */
+}
+
+/* Footer */
+/* Footer Styling */
+footer {
+    background-color: transparent; /* Make background transparent */
+    color: #fff; /* Text color */
+    padding: 40px 20px; /* Padding for the footer */
+    font-family: Cambria, serif; /* Set font style */
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for alignment */
+    margin: auto; /* Center the footer */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.footer-logo {
+    text-align: left; /* Align logo text to the left */
+    margin-bottom: 30px; /* Increased space below the logo */
+    margin-top: 20px; /* Space above the logo */
+}
+
+.footer-logo h2 {
+    font-size: 28px; /* Increase font size for the logo */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the links */
+    gap: 40px; /* Space between links */
+    margin-bottom: 20px; /* Space below the links */
+}
+
+.link-column {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Keep links in a row */
+    text-align: center; /* Center text */
+}
+
+.link-column a {
+    color: #bbb; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 5px 0; /* Space between links */
+    font-size: 18px; /* Increase font size for links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.link-column a:hover {
+    color: #ff7f50; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center the bottom text */
+    margin-top: 20px; /* Space above the bottom text */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center social icons */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 10px; /* Space below icons */
+}
+
+.social-icons img {
+    width: 40px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-bottom p {
+    font-size: 14px; /* Font size for copyright text */
+    color: #bbb; /* Color for copyright text */
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 20px; /* Space between stacked links */
+    }
+
+    .link-column {
+        text-align: center; /* Center text in small screens */
+    }
+}
+
+/* To increase the page height */
+.section {
+    min-height: 100vh; /* Ensures the section takes at least the full viewport height */
+}
