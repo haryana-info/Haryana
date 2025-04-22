@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main 8 Categories -->
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/haryana-symbols.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/traditional-attire.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/jewelry.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/crops.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/heritage-sites.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/sports.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/traditions.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/gallery.html</loc>
+  </url>
+
+  <!-- Extra Pages (Header/Top Navigation) -->
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/about.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/help.html</loc>
+  </url>
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/resources.html</loc>
+  </url>
+
+</urlset>
