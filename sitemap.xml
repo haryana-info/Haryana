@@ -47,4 +47,10 @@
     <loc>https://haryana-info.github.io/Haryana/resources.html</loc>
   </url>
 
+  <!-- Hidden SEO Page -->
+  <url>
+    <loc>https://haryana-info.github.io/Haryana/haryana-keywords.html</loc>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
